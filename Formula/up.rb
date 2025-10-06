@@ -5,21 +5,21 @@
 class Up < Formula
   desc "UP (Unified Properties) CLI tool - parse, format, validate, and work with UP documents"
   homepage "https://github.com/uplang/tools"
-  version "0.0.7"
+  version "0.0.8"
   license "GPL-3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/uplang/tools/releases/download/v0.0.7/up_0.0.7_darwin_amd64.tar.gz"
-      sha256 "f72962334a8efd8a1c48d13f1d342b902b9979c51901f7a5c336059dc05de8cd"
+      url "https://github.com/uplang/tools/releases/download/v0.0.8/up_0.0.8_darwin_amd64.tar.gz"
+      sha256 "cc1d6ba53bc7ed1411fd37f78a37e16cd3283644aaf2772a67ac4530f1759270"
 
       def install
         bin.install "up"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/uplang/tools/releases/download/v0.0.7/up_0.0.7_darwin_arm64.tar.gz"
-      sha256 "d7d3acd0683adaad590e8384edeb81e954d6db36ef92e23d4dbe43c81fad0e37"
+      url "https://github.com/uplang/tools/releases/download/v0.0.8/up_0.0.8_darwin_arm64.tar.gz"
+      sha256 "e47c8be579dc1e9bb3031172b3a14c64137bb3cc071420867f9a4ff3ac8a8cb5"
 
       def install
         bin.install "up"
@@ -29,15 +29,15 @@ class Up < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/uplang/tools/releases/download/v0.0.7/up_0.0.7_linux_amd64.tar.gz"
-      sha256 "6fab81cbe362be32c88f02f9414fd55aa32570bcac4139b978d097f5d7d99059"
+      url "https://github.com/uplang/tools/releases/download/v0.0.8/up_0.0.8_linux_amd64.tar.gz"
+      sha256 "1ee109cd5b664542c41e883e20d4196b97343228ede4d43ad480bd9ccea0f1d0"
       def install
         bin.install "up"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/uplang/tools/releases/download/v0.0.7/up_0.0.7_linux_arm64.tar.gz"
-      sha256 "04ecce6f1ec25673569f4a7ff589d7463e4adcb0ea73002c68d3d216917911e0"
+      url "https://github.com/uplang/tools/releases/download/v0.0.8/up_0.0.8_linux_arm64.tar.gz"
+      sha256 "15a9d5fe6c966f5e33169dbfe3cd60bbff30109a8e5fc2ca68858b41f07d51fd"
       def install
         bin.install "up"
       end
