@@ -5,21 +5,21 @@
 class UpNsMath < Formula
   desc "UP namespace plugin for mathematical operations"
   homepage "https://github.com/uplang/ns"
-  version "0.0.6"
+  version "0.0.7"
   license "GPL-3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/uplang/ns/releases/download/v0.0.6/up-ns-math_0.0.6_darwin_amd64.tar.gz"
-      sha256 "34fbb3c74c89884d1fc0a7ebdeb4672f9fb234416320fe505934c197e622b498"
+      url "https://github.com/uplang/ns/releases/download/v0.0.7/up-ns-math_0.0.7_darwin_amd64.tar.gz"
+      sha256 "155e33c20caa1bfb878c1b169386989b3e1eb1f9b077ab83a692c04692d7d04e"
 
       def install
         bin.install "up-ns-math"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/uplang/ns/releases/download/v0.0.6/up-ns-math_0.0.6_darwin_arm64.tar.gz"
-      sha256 "86f7fb67cccd193b0f42d2bb6673aaf2ac6317a0dec871c674b5be84d06182cc"
+      url "https://github.com/uplang/ns/releases/download/v0.0.7/up-ns-math_0.0.7_darwin_arm64.tar.gz"
+      sha256 "ef7ca798338a5a36f32e5bc51ccc0457dfaf97218a05a5cce8e5825fd0b28150"
 
       def install
         bin.install "up-ns-math"
@@ -29,15 +29,15 @@ class UpNsMath < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/uplang/ns/releases/download/v0.0.6/up-ns-math_0.0.6_linux_amd64.tar.gz"
-      sha256 "6198d3faac74462fab663b57298c2518d0920d19480fd25769f6d1097551cb92"
+      url "https://github.com/uplang/ns/releases/download/v0.0.7/up-ns-math_0.0.7_linux_amd64.tar.gz"
+      sha256 "ea6147c1074e262059a7832be8a610ed67e96b2ed76254419686f94946a55cea"
       def install
         bin.install "up-ns-math"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/uplang/ns/releases/download/v0.0.6/up-ns-math_0.0.6_linux_arm64.tar.gz"
-      sha256 "21b5941d81694b00ddf20ccc71b543df2017022bbd61ae38da4cd0ace1049186"
+      url "https://github.com/uplang/ns/releases/download/v0.0.7/up-ns-math_0.0.7_linux_arm64.tar.gz"
+      sha256 "4d49bfff876a9695e1d98e5900f4d4dfa6dc45f0f8aa0612f66da835cd19e78c"
       def install
         bin.install "up-ns-math"
       end
