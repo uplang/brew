@@ -5,23 +5,23 @@
 class Up < Formula
   desc "UP (Unified Properties) CLI tool - parse, format, validate, and work with UP documents"
   homepage "https://github.com/uplang/tools"
-  version "0.0.1"
+  version "0.0.2"
   license "GPL-3.0"
 
   depends_on "go" => :optional
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/uplang/tools/releases/download/v0.0.1/up_0.0.1_darwin_amd64.tar.gz"
-      sha256 "4febc4c812f17b9b95c2b5e8bc68d21d7801ce8e36636be70e4c3b9900efa2d0"
+      url "https://github.com/uplang/tools/releases/download/v0.0.2/up_0.0.2_darwin_amd64.tar.gz"
+      sha256 "d901fd9da103b839b902896399085b7abc8318afb22b85423bbd452fc3f9b98c"
 
       def install
         bin.install "up"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/uplang/tools/releases/download/v0.0.1/up_0.0.1_darwin_arm64.tar.gz"
-      sha256 "c18586b7548603449d56303d86d6c1e1ccfdc20181a2d0e272dd9493ad47413d"
+      url "https://github.com/uplang/tools/releases/download/v0.0.2/up_0.0.2_darwin_arm64.tar.gz"
+      sha256 "290e7cdda9fa66dbba670cc0253e51908f72abd7ab4dbbe9c5ceac4843d00859"
 
       def install
         bin.install "up"
@@ -31,15 +31,15 @@ class Up < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/uplang/tools/releases/download/v0.0.1/up_0.0.1_linux_amd64.tar.gz"
-      sha256 "916e9b3c9b53ea273a91fa720e6aceb48245d4b20496f64749c4410aa5bcbe19"
+      url "https://github.com/uplang/tools/releases/download/v0.0.2/up_0.0.2_linux_amd64.tar.gz"
+      sha256 "6eca7927a8a47aaff4d5e6f9b8c6248143fa459e59991321b1839b481b080862"
       def install
         bin.install "up"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/uplang/tools/releases/download/v0.0.1/up_0.0.1_linux_arm64.tar.gz"
-      sha256 "a92021675e12c0b5bc35c8ed52673ecb88e2cb542261c0b227566cc38f852125"
+      url "https://github.com/uplang/tools/releases/download/v0.0.2/up_0.0.2_linux_arm64.tar.gz"
+      sha256 "50a74ce02f2514cc85003442ac272504c5f6a5fa8a61f65ed3a9e8c235eaa185"
       def install
         bin.install "up"
       end
