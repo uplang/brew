@@ -3,7 +3,7 @@ cask "up" do
   name "up"
   desc "UP (Unified Properties) CLI tool - parse, format, validate, and work with UP documents"
   homepage "https://github.com/uplang/tools"
-  version "0.0.3"
+  version "0.0.6"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "up" do
   on_macos do
     on_intel do
       url "https://github.com/uplang/tools/releases/download/v#{version}/up_#{version}_darwin_amd64.tar.gz"
-      sha256 "ab78e6fae3cf1b414f00f352ebd3235ed8d749f6679b0850e85822df90811b21"
+      sha256 "23eaea4df4b1f4890f6953285e91a9a911f4a9d9d195b2f9a09e8a4c4db7c790"
     end
     on_arm do
       url "https://github.com/uplang/tools/releases/download/v#{version}/up_#{version}_darwin_arm64.tar.gz"
-      sha256 "931a20275d40b1c3d1b17d6ffb1a65b4f86e2e58a8ce8d48cd102d3a368c3ee8"
+      sha256 "20fe8cff9585edb9399734fc06f3f2297696df0a62e889b4f78f8e80d246a5ae"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/uplang/tools/releases/download/v#{version}/up_#{version}_linux_amd64.tar.gz"
-      sha256 "a3e8dc92c468a42c1d6a63d5c469c5a1c2725ceaed6ae3156e4e6a1547bf1eb0"
+      sha256 "e94f60e3d94d64dc5c70f05d4655d5deabcd5b2fcd3c21cd156f95676d88e3f0"
     end
     on_arm do
       url "https://github.com/uplang/tools/releases/download/v#{version}/up_#{version}_linux_arm64.tar.gz"
-      sha256 "2e9e45a81565a399e5b5ffe47c15fa9887abb1b8fddd76d8936ff94e658c048c"
+      sha256 "4b252c2a80b706e5060e00862f9210216cfff5d202e7a60d440c099d2611bdc9"
     end
   end
 
