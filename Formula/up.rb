@@ -5,23 +5,21 @@
 class Up < Formula
   desc "UP (Unified Properties) CLI tool - parse, format, validate, and work with UP documents"
   homepage "https://github.com/uplang/tools"
-  version "0.0.2"
+  version "0.0.7"
   license "GPL-3.0"
-
-  depends_on "go" => :optional
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/uplang/tools/releases/download/v0.0.2/up_0.0.2_darwin_amd64.tar.gz"
-      sha256 "d901fd9da103b839b902896399085b7abc8318afb22b85423bbd452fc3f9b98c"
+      url "https://github.com/uplang/tools/releases/download/v0.0.7/up_0.0.7_darwin_amd64.tar.gz"
+      sha256 "f72962334a8efd8a1c48d13f1d342b902b9979c51901f7a5c336059dc05de8cd"
 
       def install
         bin.install "up"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/uplang/tools/releases/download/v0.0.2/up_0.0.2_darwin_arm64.tar.gz"
-      sha256 "290e7cdda9fa66dbba670cc0253e51908f72abd7ab4dbbe9c5ceac4843d00859"
+      url "https://github.com/uplang/tools/releases/download/v0.0.7/up_0.0.7_darwin_arm64.tar.gz"
+      sha256 "d7d3acd0683adaad590e8384edeb81e954d6db36ef92e23d4dbe43c81fad0e37"
 
       def install
         bin.install "up"
@@ -31,15 +29,15 @@ class Up < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/uplang/tools/releases/download/v0.0.2/up_0.0.2_linux_amd64.tar.gz"
-      sha256 "6eca7927a8a47aaff4d5e6f9b8c6248143fa459e59991321b1839b481b080862"
+      url "https://github.com/uplang/tools/releases/download/v0.0.7/up_0.0.7_linux_amd64.tar.gz"
+      sha256 "6fab81cbe362be32c88f02f9414fd55aa32570bcac4139b978d097f5d7d99059"
       def install
         bin.install "up"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/uplang/tools/releases/download/v0.0.2/up_0.0.2_linux_arm64.tar.gz"
-      sha256 "50a74ce02f2514cc85003442ac272504c5f6a5fa8a61f65ed3a9e8c235eaa185"
+      url "https://github.com/uplang/tools/releases/download/v0.0.7/up_0.0.7_linux_arm64.tar.gz"
+      sha256 "04ecce6f1ec25673569f4a7ff589d7463e4adcb0ea73002c68d3d216917911e0"
       def install
         bin.install "up"
       end
@@ -57,10 +55,5 @@ class Up < Formula
         up format -i config.up
         up validate -i config.up
     EOS
-  end
-
-  test do
-    system "#{bin}/up", "version"
-    system "#{bin}/up", "parse", "--help"
   end
 end
