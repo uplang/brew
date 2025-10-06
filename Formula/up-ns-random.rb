@@ -5,21 +5,21 @@
 class UpNsRandom < Formula
   desc "UP namespace plugin for random value generation"
   homepage "https://github.com/uplang/ns"
-  version "0.0.7"
+  version "0.0.9"
   license "GPL-3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/uplang/ns/releases/download/v0.0.7/up-ns-random_0.0.7_darwin_amd64.tar.gz"
-      sha256 "d1e8437c8806f96cf554a54972cd98cfd7ac38c6c984437735151ea6999ea957"
+      url "https://github.com/uplang/ns/releases/download/v0.0.9/up-ns-random_0.0.9_darwin_amd64.tar.gz"
+      sha256 "022e6f1453212d09b3953de0ba4f825f7148d93ba2ae43355f80a7fd7a4fe561"
 
       def install
         bin.install "up-ns-random"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/uplang/ns/releases/download/v0.0.7/up-ns-random_0.0.7_darwin_arm64.tar.gz"
-      sha256 "7b3032859a8f516a91ad2a84093252951419e4d432d00232a3aa5a606fa5a4ab"
+      url "https://github.com/uplang/ns/releases/download/v0.0.9/up-ns-random_0.0.9_darwin_arm64.tar.gz"
+      sha256 "56742157ed469221f8fe48c9c92bb86b98d5621c081dc27df0045dc66043757c"
 
       def install
         bin.install "up-ns-random"
@@ -29,15 +29,15 @@ class UpNsRandom < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/uplang/ns/releases/download/v0.0.7/up-ns-random_0.0.7_linux_amd64.tar.gz"
-      sha256 "b09e01d0d2ce7a070ccbe6b9a5298bfd88cd80c556560d0a730ce4ec4cd346ac"
+      url "https://github.com/uplang/ns/releases/download/v0.0.9/up-ns-random_0.0.9_linux_amd64.tar.gz"
+      sha256 "9558c777bd83a4d22ddf77b6a8c3613b21404a1066f7488b2dcca0e3815c5b16"
       def install
         bin.install "up-ns-random"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/uplang/ns/releases/download/v0.0.7/up-ns-random_0.0.7_linux_arm64.tar.gz"
-      sha256 "6e49d1cac4e37388eee29564532be151984be250db8cec05e60694feca309eda"
+      url "https://github.com/uplang/ns/releases/download/v0.0.9/up-ns-random_0.0.9_linux_arm64.tar.gz"
+      sha256 "d20eb66e06c8a038361ef8517d31004e2a34f512bf8b4d6a1886da458e88537b"
       def install
         bin.install "up-ns-random"
       end
