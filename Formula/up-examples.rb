@@ -5,21 +5,21 @@
 class UpExamples < Formula
   desc "UP (Unified Properties) examples test runner"
   homepage "https://github.com/uplang/tools"
-  version "0.0.12"
+  version "0.0.13"
   license "GPL-3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/uplang/tools/releases/download/v0.0.12/up-examples_0.0.12_darwin_amd64.tar.gz"
-      sha256 "dd04e0d568f6fa3b1a69f17547f8e6558ec7ca51cf29e91fd437c2705853e7d6"
+      url "https://github.com/uplang/tools/releases/download/v0.0.13/up-examples_0.0.13_darwin_amd64.tar.gz"
+      sha256 "62c04571e56b84cf235b37567c33cf84605448dcc0878c20cdfee44fd19ac86e"
 
       def install
         bin.install "examples"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/uplang/tools/releases/download/v0.0.12/up-examples_0.0.12_darwin_arm64.tar.gz"
-      sha256 "8d20ea26e66a03965ddc6282cef383688243cb74be88e93fde7b535b7efebe96"
+      url "https://github.com/uplang/tools/releases/download/v0.0.13/up-examples_0.0.13_darwin_arm64.tar.gz"
+      sha256 "9695cdb8d3632576900daeddabd5e4329deca122fe5818e7612be6452a99a0e9"
 
       def install
         bin.install "examples"
@@ -29,15 +29,15 @@ class UpExamples < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/uplang/tools/releases/download/v0.0.12/up-examples_0.0.12_linux_amd64.tar.gz"
-      sha256 "9f6c99c0bb1801a5889985feeda14d4aaf21b24a01ac91b65b9524af66fa6b64"
+      url "https://github.com/uplang/tools/releases/download/v0.0.13/up-examples_0.0.13_linux_amd64.tar.gz"
+      sha256 "c7c96c18d5551c213a77cf77c949571002204c9235bbaa0b99bca312cbdb11ed"
       def install
         bin.install "examples"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/uplang/tools/releases/download/v0.0.12/up-examples_0.0.12_linux_arm64.tar.gz"
-      sha256 "82628be544a4bbc17800d6a90a88be29b5cbafc016b02420ae6efcac623fc0bd"
+      url "https://github.com/uplang/tools/releases/download/v0.0.13/up-examples_0.0.13_linux_arm64.tar.gz"
+      sha256 "eb9044579ff9aaef72b56879397a69f600c8441c89cf92924f92140960266306"
       def install
         bin.install "examples"
       end
