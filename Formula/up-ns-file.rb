@@ -5,21 +5,21 @@
 class UpNsFile < Formula
   desc "UP namespace plugin for file system operations"
   homepage "https://github.com/uplang/ns"
-  version "0.0.5"
+  version "0.0.9"
   license "GPL-3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/uplang/ns/releases/download/v0.0.5/up-ns-file_0.0.5_darwin_amd64.tar.gz"
-      sha256 "abbcd8725b036a03b7f8f0661d15d183cec05105143e0a7b035a044a5af95820"
+      url "https://github.com/uplang/ns/releases/download/v0.0.9/up-ns-file_0.0.9_darwin_amd64.tar.gz"
+      sha256 "68c17da1a5ec2e83f2b8ef65b4e0a901b8519e18763aaae88ce7b8a6bcaa3d3a"
 
       def install
         bin.install "up-ns-file"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/uplang/ns/releases/download/v0.0.5/up-ns-file_0.0.5_darwin_arm64.tar.gz"
-      sha256 "ebff90572526f1ecbd8c14a57084c22f7b66e65cc0d45efbafa8e0e594ca7c39"
+      url "https://github.com/uplang/ns/releases/download/v0.0.9/up-ns-file_0.0.9_darwin_arm64.tar.gz"
+      sha256 "46140a8752bb952ce644214de633f08749c78a1ff8e2c8abc76f98fc74d1d645"
 
       def install
         bin.install "up-ns-file"
@@ -29,15 +29,15 @@ class UpNsFile < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/uplang/ns/releases/download/v0.0.5/up-ns-file_0.0.5_linux_amd64.tar.gz"
-      sha256 "b9eaeafe77968693a416aeb2a6fda75ba448c4a0e502dc9092a577f38fe50415"
+      url "https://github.com/uplang/ns/releases/download/v0.0.9/up-ns-file_0.0.9_linux_amd64.tar.gz"
+      sha256 "00a5f3d8b762b2332d76838962c5579015ded05df8d6b294d12cd5e31089ccd6"
       def install
         bin.install "up-ns-file"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/uplang/ns/releases/download/v0.0.5/up-ns-file_0.0.5_linux_arm64.tar.gz"
-      sha256 "b574d8c746ffb1c978d025c6aa2343b331db5528177fa81d325c98c9bb562f2c"
+      url "https://github.com/uplang/ns/releases/download/v0.0.9/up-ns-file_0.0.9_linux_arm64.tar.gz"
+      sha256 "e3d786c4533853368a3b16b8132d76915c88f7802850cab1e40dcfda1a1a0c9e"
       def install
         bin.install "up-ns-file"
       end
