@@ -5,21 +5,21 @@
 class UpNsTime < Formula
   desc "UP namespace plugin for time manipulation and formatting"
   homepage "https://github.com/uplang/ns"
-  version "0.0.7"
+  version "0.0.9"
   license "GPL-3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/uplang/ns/releases/download/v0.0.7/up-ns-time_0.0.7_darwin_amd64.tar.gz"
-      sha256 "3506d36dcfd2f10666517b657b7d22e5c95ea429c0ad05efac718bc60d660070"
+      url "https://github.com/uplang/ns/releases/download/v0.0.9/up-ns-time_0.0.9_darwin_amd64.tar.gz"
+      sha256 "81b3300d161f6e9a2141d0838d606e5cb0bbebb8abce06f26c177cef7c75f702"
 
       def install
         bin.install "up-ns-time"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/uplang/ns/releases/download/v0.0.7/up-ns-time_0.0.7_darwin_arm64.tar.gz"
-      sha256 "e690fb0f61de499c73a6224b2b7bed3d3ab87f3bbb2408ea4f5c9972dc22b794"
+      url "https://github.com/uplang/ns/releases/download/v0.0.9/up-ns-time_0.0.9_darwin_arm64.tar.gz"
+      sha256 "acf1d65a7a2673c979cab888b989a61b0f9360bc2e4b67fe76afc943c6dd79f5"
 
       def install
         bin.install "up-ns-time"
@@ -29,15 +29,15 @@ class UpNsTime < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/uplang/ns/releases/download/v0.0.7/up-ns-time_0.0.7_linux_amd64.tar.gz"
-      sha256 "63625841c89dfd16ec5e8c796acae2ee45069ec88f620d107df50afd85ec000b"
+      url "https://github.com/uplang/ns/releases/download/v0.0.9/up-ns-time_0.0.9_linux_amd64.tar.gz"
+      sha256 "c1ea0a3b7c81964e64480612d23a8f462ef185f5ecf3b4243f0dc7348afd9688"
       def install
         bin.install "up-ns-time"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/uplang/ns/releases/download/v0.0.7/up-ns-time_0.0.7_linux_arm64.tar.gz"
-      sha256 "2619742511c53ff5e0f3518aac2c5cfdbc2e16bd24a207b64444165f8b76315c"
+      url "https://github.com/uplang/ns/releases/download/v0.0.9/up-ns-time_0.0.9_linux_arm64.tar.gz"
+      sha256 "a7f3ad9a534b6e0e72cb47e3bbf44b4b927363635a4567d4ff3bc02a0e5358b9"
       def install
         bin.install "up-ns-time"
       end
