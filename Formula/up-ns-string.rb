@@ -5,21 +5,21 @@
 class UpNsString < Formula
   desc "UP namespace plugin for string manipulation"
   homepage "https://github.com/uplang/ns"
-  version "0.0.6"
+  version "0.0.7"
   license "GPL-3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/uplang/ns/releases/download/v0.0.6/up-ns-string_0.0.6_darwin_amd64.tar.gz"
-      sha256 "483f373993424cedfe30a04729a70f7ec6fa909b0a83d0fe677675095959f2d5"
+      url "https://github.com/uplang/ns/releases/download/v0.0.7/up-ns-string_0.0.7_darwin_amd64.tar.gz"
+      sha256 "3206f507e10134bc7dd3b8e93364d4403b136a0b9c307bde29d2d9017df653ff"
 
       def install
         bin.install "up-ns-string"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/uplang/ns/releases/download/v0.0.6/up-ns-string_0.0.6_darwin_arm64.tar.gz"
-      sha256 "b387cf27c802ec8d84e57c26c74ea078b4599de8659a875be1f7db7460ca34f1"
+      url "https://github.com/uplang/ns/releases/download/v0.0.7/up-ns-string_0.0.7_darwin_arm64.tar.gz"
+      sha256 "0edd5977565a723df44e032112156ec246b431ee452c4fb40f8b9ef6f6a28916"
 
       def install
         bin.install "up-ns-string"
@@ -29,15 +29,15 @@ class UpNsString < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/uplang/ns/releases/download/v0.0.6/up-ns-string_0.0.6_linux_amd64.tar.gz"
-      sha256 "8c45940faa9e6c54e17e106d953f49dc3a43dc259a1f7dd506460eb3fb6c7535"
+      url "https://github.com/uplang/ns/releases/download/v0.0.7/up-ns-string_0.0.7_linux_amd64.tar.gz"
+      sha256 "af7ebe272b7129c0eaf84e7301057c4a92b6f83b0337e0b0852b2a007e868f3f"
       def install
         bin.install "up-ns-string"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/uplang/ns/releases/download/v0.0.6/up-ns-string_0.0.6_linux_arm64.tar.gz"
-      sha256 "c3ca3e1257f0638614072d96b7052974cb84496ebffdbfddbdca6fb92d452c8f"
+      url "https://github.com/uplang/ns/releases/download/v0.0.7/up-ns-string_0.0.7_linux_arm64.tar.gz"
+      sha256 "0a17d5845cce40371dd6cf4c6468a3be8dcd953b86770ba84dd151608d0bfbfe"
       def install
         bin.install "up-ns-string"
       end
