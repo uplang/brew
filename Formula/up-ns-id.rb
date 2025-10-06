@@ -5,21 +5,21 @@
 class UpNsId < Formula
   desc "UP namespace plugin for ID generation (UUID, ULID, etc.)"
   homepage "https://github.com/uplang/ns"
-  version "0.0.5"
+  version "0.0.6"
   license "GPL-3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/uplang/ns/releases/download/v0.0.5/up-ns-id_0.0.5_darwin_amd64.tar.gz"
-      sha256 "9fe8d1a73149090eb384349c0ca53b48527dd86e74c50131825fd9097798a581"
+      url "https://github.com/uplang/ns/releases/download/v0.0.6/up-ns-id_0.0.6_darwin_amd64.tar.gz"
+      sha256 "af4d74df70e91e4fa398d1fd599c46bca82a6f0724b313e30e63d2810eeb8067"
 
       def install
         bin.install "up-ns-id"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/uplang/ns/releases/download/v0.0.5/up-ns-id_0.0.5_darwin_arm64.tar.gz"
-      sha256 "e309773fc5bf0db26763d4845b383759b4cee4ecfe2c019daa83ec1f27b86a7c"
+      url "https://github.com/uplang/ns/releases/download/v0.0.6/up-ns-id_0.0.6_darwin_arm64.tar.gz"
+      sha256 "3fba306d4a406bb60d56eb5dd46b46c340053f0eeaad4d38cdb6c2d57f500230"
 
       def install
         bin.install "up-ns-id"
@@ -29,15 +29,15 @@ class UpNsId < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/uplang/ns/releases/download/v0.0.5/up-ns-id_0.0.5_linux_amd64.tar.gz"
-      sha256 "f5c3396901732b630eb57598bae82b5005dc791a4dc84c1b6707f9d2d8ee8668"
+      url "https://github.com/uplang/ns/releases/download/v0.0.6/up-ns-id_0.0.6_linux_amd64.tar.gz"
+      sha256 "335c9b8c075ac534573cfa8db9d51d9a120252010bc5c4f9f076bec83c4d0888"
       def install
         bin.install "up-ns-id"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/uplang/ns/releases/download/v0.0.5/up-ns-id_0.0.5_linux_arm64.tar.gz"
-      sha256 "4b4f3d7296a60fdd45527ca06fc6af11f178e357382c3ca23b92dde1ea1b816b"
+      url "https://github.com/uplang/ns/releases/download/v0.0.6/up-ns-id_0.0.6_linux_arm64.tar.gz"
+      sha256 "1349512edd82b922024d6832ff47ca8de1ec1af4f91ec70ed7945c61f3f2156f"
       def install
         bin.install "up-ns-id"
       end
