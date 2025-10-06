@@ -5,21 +5,21 @@
 class UpNsList < Formula
   desc "UP namespace plugin for list generation and manipulation"
   homepage "https://github.com/uplang/ns"
-  version "0.0.7"
+  version "0.0.9"
   license "GPL-3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/uplang/ns/releases/download/v0.0.7/up-ns-list_0.0.7_darwin_amd64.tar.gz"
-      sha256 "41e49a2658351f7483456a6ca76a135eed22ad35381f9a7ef22fedfdf3598047"
+      url "https://github.com/uplang/ns/releases/download/v0.0.9/up-ns-list_0.0.9_darwin_amd64.tar.gz"
+      sha256 "cd12e6f0db33b86176f9a299841840845aca9be8f9a938d14bc8b1ffb637981d"
 
       def install
         bin.install "up-ns-list"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/uplang/ns/releases/download/v0.0.7/up-ns-list_0.0.7_darwin_arm64.tar.gz"
-      sha256 "1f841f935ac43588f03e37767b36f904597b8e43a3a857430e46d06c524e2a52"
+      url "https://github.com/uplang/ns/releases/download/v0.0.9/up-ns-list_0.0.9_darwin_arm64.tar.gz"
+      sha256 "e612cba68455ad53cbb3fb64c52f611ab8bf46df2e8b34bf05f4a9039312af98"
 
       def install
         bin.install "up-ns-list"
@@ -29,15 +29,15 @@ class UpNsList < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/uplang/ns/releases/download/v0.0.7/up-ns-list_0.0.7_linux_amd64.tar.gz"
-      sha256 "4f14c9bb8d9d8b28a10195f3b45428707e581f148da2e29403e62022dd79a919"
+      url "https://github.com/uplang/ns/releases/download/v0.0.9/up-ns-list_0.0.9_linux_amd64.tar.gz"
+      sha256 "bb2ef34f10b71d1f253d4bae391737977623b19238d1f7431c3a6c394782f358"
       def install
         bin.install "up-ns-list"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/uplang/ns/releases/download/v0.0.7/up-ns-list_0.0.7_linux_arm64.tar.gz"
-      sha256 "b4788092f64c0d67da86388b6ae3e83d60441918351b281456e20d67dfab8e9e"
+      url "https://github.com/uplang/ns/releases/download/v0.0.9/up-ns-list_0.0.9_linux_arm64.tar.gz"
+      sha256 "cb41ce10dd2c7f7702222a66232c6ab2d743f34abb820198c003f760bfced492"
       def install
         bin.install "up-ns-list"
       end
