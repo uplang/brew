@@ -5,21 +5,21 @@
 class UpNsFake < Formula
   desc "UP namespace plugin for fake data generation"
   homepage "https://github.com/uplang/ns"
-  version "0.0.6"
+  version "0.0.7"
   license "GPL-3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/uplang/ns/releases/download/v0.0.6/up-ns-fake_0.0.6_darwin_amd64.tar.gz"
-      sha256 "6ae9e035271238f60881b1a1f1e83240a893a5a241859ea9f310738f44ac285d"
+      url "https://github.com/uplang/ns/releases/download/v0.0.7/up-ns-fake_0.0.7_darwin_amd64.tar.gz"
+      sha256 "036306cc7614a29260286e8756ad246f9f671fa3c20b3eccc20b29bfa3f10329"
 
       def install
         bin.install "up-ns-fake"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/uplang/ns/releases/download/v0.0.6/up-ns-fake_0.0.6_darwin_arm64.tar.gz"
-      sha256 "3647935537895441ffa3fdf1110794999859caded20549f3afd8b42856d18fac"
+      url "https://github.com/uplang/ns/releases/download/v0.0.7/up-ns-fake_0.0.7_darwin_arm64.tar.gz"
+      sha256 "8d567023f36dd50d245b865e9a56108d1dca6a5f5dc4d53529375a8dc2094360"
 
       def install
         bin.install "up-ns-fake"
@@ -29,15 +29,15 @@ class UpNsFake < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/uplang/ns/releases/download/v0.0.6/up-ns-fake_0.0.6_linux_amd64.tar.gz"
-      sha256 "7f4900b30634b886fa285e321334a0c79c26894d620c71e521351c9cb99db9b4"
+      url "https://github.com/uplang/ns/releases/download/v0.0.7/up-ns-fake_0.0.7_linux_amd64.tar.gz"
+      sha256 "3b34b8676fe28def753090effe748f9b39de9f4f049d8d87d80270af134561bb"
       def install
         bin.install "up-ns-fake"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/uplang/ns/releases/download/v0.0.6/up-ns-fake_0.0.6_linux_arm64.tar.gz"
-      sha256 "3e7b765430d0581113cc6dae0c80af83872cc2a528b0366661769d9959f394f9"
+      url "https://github.com/uplang/ns/releases/download/v0.0.7/up-ns-fake_0.0.7_linux_arm64.tar.gz"
+      sha256 "c07161f65a59c0400c27dad12ce4a335cafc1b71564a5e5523c4dca538e943d0"
       def install
         bin.install "up-ns-fake"
       end
